@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   background-color: black;
-  /* height: 70%; */
+  height: 500px;
   width: 50%;
   margin: 0 auto;
 `;
