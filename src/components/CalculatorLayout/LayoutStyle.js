@@ -11,7 +11,8 @@ export const Calculator = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: black;
+  background-image: u;
+
   width: 30%;
   margin: 0 auto;
 `;

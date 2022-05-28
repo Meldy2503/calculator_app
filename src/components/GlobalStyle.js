@@ -25,6 +25,9 @@ ul{
 body {
     font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
+    background:  #404040;
+   
+    
    
 }
 

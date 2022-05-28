@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
 export const ButtonContainer = styled.div`
-  /* background-color: red; */
-
-  padding: 1rem;
-  /* height: 80%; */
+  padding: 2rem 1rem;
   width: 100%;
 `;
 export const ButtonWrapper = styled.div`
@@ -12,7 +9,7 @@ export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   /* width: 100%; */
-  padding: 0 1rem 0 1rem;
+  padding: 1rem 1rem 0 1rem;
 `;
 export const Button = styled.div`
   background-color: black;
@@ -20,6 +17,6 @@ export const Button = styled.div`
   margin-bottom: 2rem;
   padding: 2rem;
   color: #fff;
-  align-items: center;
+  justify-content: center;
   width: 20%;
 `;
