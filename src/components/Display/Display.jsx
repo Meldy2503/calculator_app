@@ -1,7 +1,7 @@
 import React from "react";
 
-const Screen = () => {
+const Display = () => {
   return <div>screen</div>;
 };
 
-export default Screen;
+export default Display;

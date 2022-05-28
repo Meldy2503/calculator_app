@@ -1,14 +1,15 @@
 import React from "react";
 import Buttons from "../Buttons/Buttons";
 import Display from "../Display/Display";
-import { Textfit } from "react-textfit";
+// import { Textfit } from "react-textfit";
+import { Wrapper } from "./LayoutStyle";
 
 const CalculatorLayout = () => {
   return (
     <Wrapper>
-      <Textfit>
-        <Display />
-      </Textfit>
+      {/* <Textfit> */}
+      <Display />
+      {/* </Textfit> */}
       <Buttons />
     </Wrapper>
   );

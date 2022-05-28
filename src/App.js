@@ -1,8 +1,12 @@
+import CalculatorLayout from "./components/CalculatorLayout/CalculatorLayout";
+import { GlobalStyle } from "./components/GlobalStyle";
+
 function App() {
   return (
-    <div className="App">
-      <h2>my new calculator app</h2>
-    </div>
+    <>
+      <GlobalStyle />
+      <CalculatorLayout />
+    </>
   );
 }
 
