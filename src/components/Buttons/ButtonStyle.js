@@ -1,21 +1,25 @@
 import styled from "styled-components";
 
 export const ButtonContainer = styled.div`
-  background-color: red;
-  height: 80%;
+  /* background-color: red; */
+
+  padding: 1rem;
+  /* height: 80%; */
+  width: 100%;
 `;
 export const ButtonWrapper = styled.div`
   background-color: green;
-  /* margin-bottom: 2rem; */
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 2rem;
+  /* width: 100%; */
+  padding: 0 1rem 0 1rem;
 `;
-export const Button = styled.button`
+export const Button = styled.div`
   background-color: black;
   display: flex;
+  margin-bottom: 2rem;
+  padding: 2rem;
   color: #fff;
   align-items: center;
-  padding: 2rem;
+  width: 20%;
 `;

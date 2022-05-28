@@ -1,9 +1,18 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Container = styled.div`
+  max-width: 120rem;
+  overflow: hidden;
+  margin: 0 auto;
+`;
+
+export const Calculator = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: black;
-  height: 500px;
-  width: 50%;
+  width: 30%;
   margin: 0 auto;
 `;
 

@@ -1,7 +1,14 @@
 import styled from "styled-components";
 
 export const Screen = styled.div`
-  height: 20%;
+  /* height: 40%; */
   background-color: blue;
   color: white;
+  padding: 2.5rem 2rem;
+
+  h2 {
+    background-color: yellow;
+    padding: 2rem 1rem;
+    text-align: right;
+  }
 `;
