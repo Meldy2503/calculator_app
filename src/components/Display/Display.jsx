@@ -1,10 +1,14 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Screen } from "./ScreenStyle";
+import { calcContext } from "../../calcContext";
+
 
 const Display = () => {
+
+  const {display} = useContext(calcContext);
   return (
     <Screen>
-      <h2>0</h2>
+      <h2>{display}</h2>
     </Screen>
   );
 };
