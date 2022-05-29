@@ -39,7 +39,9 @@ const Buttons = () => {
       <ButtonWrapper>
         <Button>0</Button>
         <Button>.</Button>
-        <Button>del</Button>
+        <Button className="red" bgColor="red">
+          del
+        </Button>
         <Button>=</Button>
       </ButtonWrapper>
     </ButtonContainer>

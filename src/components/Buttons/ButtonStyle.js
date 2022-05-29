@@ -5,18 +5,28 @@ export const ButtonContainer = styled.div`
   width: 100%;
 `;
 export const ButtonWrapper = styled.div`
-  background-color: green;
+  /* background-color: green; */
   display: flex;
   justify-content: space-between;
   /* width: 100%; */
-  padding: 1rem 1rem 0 1rem;
+  padding: 0 1rem;
 `;
 export const Button = styled.div`
-  background-color: black;
+  background-color: ${({ bgColor }) => bgColor || "rgba(0, 0, 0, 0.95)"};
   display: flex;
   margin-bottom: 2rem;
   padding: 2rem;
-  color: #fff;
+
   justify-content: center;
-  width: 20%;
+  width: 22%;
+  /* border-right: 2px solid #efefef; */
+  box-shadow: 1px 15px 1px #292828;
+  /* box-shadow: 1px 15px 1px rgba(0, 0, 0, 0.5); */
+  border-radius: 50%;
+  border-bottom: 3px solid #333;
+  border-left: 3px solid #999;
+  border-top: 3px solid #333;
+  border-right: 3px solid #999;
+  font-size: 2rem;
+  font-weight: 700;
 `;
