@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Screen = styled.div`
-  padding: 4rem 2rem 0.5rem 2rem;
+  margin: 4rem 2rem 0.5rem 2rem;
 
   h2 {
     background-color: rgba(0, 0, 0, 0.95);
@@ -12,7 +12,7 @@ export const Screen = styled.div`
     border-top: 3px solid #333;
     border-right: 3px solid #999;
     font-size: 2.5rem;
-    padding: 2rem 1rem;
+    padding: 2rem;
     text-align: right;
     margin-bottom: 1rem;
 

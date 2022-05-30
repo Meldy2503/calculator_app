@@ -5,7 +5,7 @@ import { CalcContext } from "../../CalcContext";
 const Digits = ({ value, bgColor, co }) => {
   const { displayButtonText } = useContext(CalcContext);
   return (
-    <InputContainer bgColor={bgColor} co={co}>
+    <InputContainer co={co}>
       <input
         type="button"
         value={value}
