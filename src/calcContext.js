@@ -1,15 +1,15 @@
-import { useState, createContext } from "react";
+import React, { useState, createContext } from "react";
 
-export const calcContext = createContext();
+export const CalcContext = createContext();
 
-export const calcProvider = (props) => {
-    const [display, setDisplay] = useState('0');
+export const CalcProvider = ({ children }) => {
+  const [display, setDisplay] = useState(0);
 
-    const displayButtonText = (e) => {
-        setDisplay(e.target.value);
-    }
-  const value = {display, displayButtonText};
-  return (
-    <calcContext.Provider value={value}>{props.children}</calcContext.Provider>
-  );
+  const displayButtonText = (e) => {
+    setDisplay(e.target.value);
+  };
+
+  // const handleDelButton =()
+  const value = { display, displayButtonText };
+  return <CalcContext.Provider value={value}>{children}</CalcContext.Provider>;
 };

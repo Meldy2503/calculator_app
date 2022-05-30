@@ -1,11 +1,9 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import { Screen } from "./ScreenStyle";
-import { calcContext } from "../../calcContext";
-
+import { CalcContext } from "../../CalcContext";
 
 const Display = () => {
-
-  const {display} = useContext(calcContext);
+  const { display } = useContext(CalcContext);
   return (
     <Screen>
       <h2>{display}</h2>

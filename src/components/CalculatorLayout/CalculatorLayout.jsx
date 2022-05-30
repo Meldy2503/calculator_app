@@ -3,13 +3,8 @@ import Buttons from "../Buttons/Buttons";
 import Display from "../Display/Display";
 // import { Textfit } from "react-textfit";
 import { Calculator, Container } from "./LayoutStyle";
-import { calcContext } from "../../calcContext";
 
-  
-
-const CalculatorLayout = () => {
-  const {display} = useContext(calcContext);
-
+const CalculatorLayout = ({ value }) => {
   return (
     <Container>
       <Calculator>

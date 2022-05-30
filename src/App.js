@@ -1,12 +1,12 @@
 import CalculatorLayout from "./components/CalculatorLayout/CalculatorLayout";
 import "./App.css";
-import { calcProvider } from "./calcContext";
+import { CalcProvider } from "./CalcContext";
 
 function App() {
   return (
-    <calcProvider>
+    <CalcProvider>
       <CalculatorLayout />
-    </calcProvider>
+    </CalcProvider>
   );
 }
 
