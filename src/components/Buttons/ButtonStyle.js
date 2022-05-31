@@ -16,6 +16,7 @@ export const Operator = styled.input`
   color: ${({ col }) => col || "#dfd9d9"};
   margin-bottom: 2rem;
   justify-content: center;
+  align-items: center;
   width: 22%;
   box-shadow: 1px 15px 1px #292828;
   border-radius: 50%;
@@ -26,6 +27,7 @@ export const Operator = styled.input`
   font-size: 2.5rem;
   font-weight: 700;
   padding: 2rem;
+  cursor: pointer;
 
   &:hover {
     transform: translateY(5px);

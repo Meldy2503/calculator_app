@@ -1,5 +1,4 @@
 import React, { useState, createContext } from "react";
-import Display from "./components/Display/Display";
 
 export const CalcContext = createContext();
 
@@ -7,7 +6,7 @@ export const CalcProvider = ({ children }) => {
   const [display, setDisplay] = useState("");
 
   const displayButtonText = (e) => {
-    setDisplay(display?.concat(e.target.value));
+    setDisplay(display.concat(e.target?.name));
   };
 
   const handleClrButton = () => {
@@ -15,6 +14,9 @@ export const CalcProvider = ({ children }) => {
   };
   const handleDelButton = () => {
     setDisplay(display?.slice(0, -1));
+  };
+  const handleSqrtButton = (e) => {
+    setDisplay(Math.sqrt(display));
   };
 
   const parse = (a) => {
@@ -39,6 +41,7 @@ export const CalcProvider = ({ children }) => {
     handleClrButton,
     handleEqualToButton,
     handlePercentButton,
+    handleSqrtButton,
   };
   return <CalcContext.Provider value={value}>{children}</CalcContext.Provider>;
 };

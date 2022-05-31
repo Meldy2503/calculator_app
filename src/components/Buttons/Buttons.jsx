@@ -9,6 +9,7 @@ const Buttons = () => {
     handleClrButton,
     handleEqualToButton,
     handlePercentButton,
+    handleSqrtButton,
   } = useContext(CalcContext);
   return (
     <ButtonContainer>
@@ -19,36 +20,41 @@ const Buttons = () => {
           onClick={handleClrButton}
           value="C"
         />
-        <Digits co="#e6c649" value="**" />
+        <Operator
+          type="button"
+          col="#e6c649"
+          value="&#8730;"
+          onClick={handleSqrtButton}
+        />
         <Operator
           type="button"
           col="#e6c649"
           value="%"
           onClick={handlePercentButton}
         />
-        <Digits co="#e6c649" value="/" />
+        <Digits co="#e6c649" value="/" name="/" />
       </ButtonWrapper>
       <ButtonWrapper>
-        <Digits value="7" />
-        <Digits value="8" />
-        <Digits value="9" />
-        <Digits co="#e6c649" value="*" />
+        <Digits value="7" name="7" />
+        <Digits value="8" name="8" />
+        <Digits value="9" name="9" />
+        <Digits co="#e6c649" value="x" name="*" />
       </ButtonWrapper>
       <ButtonWrapper>
-        <Digits value="4" />
-        <Digits value="5" />
-        <Digits value="6" />
-        <Digits co="#e6c649" value="-" />
+        <Digits value="4" name="4" />
+        <Digits value="5" name="5" />
+        <Digits value="6" name="6" />
+        <Digits co="#e6c649" value="-" name="-" />
       </ButtonWrapper>
       <ButtonWrapper>
-        <Digits value="1" />
-        <Digits value="2" />
-        <Digits value="3" />
-        <Digits co="#e6c649" value="+" />
+        <Digits value="1" name="1" />
+        <Digits value="2" name="2" />
+        <Digits value="3" name="3" />
+        <Digits co="#e6c649" value="+" name="+" />
       </ButtonWrapper>
       <ButtonWrapper>
-        <Digits value="0" />
-        <Digits value="." />
+        <Digits value="0" name="0" />
+        <Digits value="." name="." />
         <Operator
           type="button"
           bgColor="#aa0c0c"

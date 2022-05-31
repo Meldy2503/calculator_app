@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const InputContainer = styled.div`
   background-color: ${({ bgColor }) => bgColor || "rgba(0, 0, 0, 0.95)"};
-  display: flex;
   color: ${({ co }) => co || "#dfd9d9"};
   margin-bottom: 2rem;
+  display: flex;
   justify-content: center;
+  align-items: center;
   width: 22%;
   box-shadow: 1px 15px 1px #292828;
   border-radius: 50%;
@@ -29,5 +30,9 @@ export const InputContainer = styled.div`
     padding: 2rem;
     background-color: transparent;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
 `;
