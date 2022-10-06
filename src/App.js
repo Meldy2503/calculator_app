@@ -1,8 +1,12 @@
+import CalculatorLayout from "./components/CalculatorLayout/CalculatorLayout";
+import "./App.css";
+import { CalcProvider } from "./CalcContext";
+
 function App() {
   return (
-    <div className="App">
-      <h2>my calculator app</h2>
-    </div>
+    <CalcProvider>
+      <CalculatorLayout />
+    </CalcProvider>
   );
 }
 
