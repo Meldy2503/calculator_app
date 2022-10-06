@@ -19,13 +19,23 @@ export const CalcProvider = ({ children }) => {
     setDisplay(Math.sqrt(display));
   };
 
-  const parse = (a) => {
-    return Function(`'use strict'; return (${a})`)();
-  };
+  // const parse = (a) => {
+  //   return Function(`'use strict'; return (${a})`)();
+  // };
+  // const parse = (a) => {
+  //   return Function(`return (${a})`)();
+  // };
 
+  // const handleEqualToButton = () => {
+  //   try {
+  //     setDisplay(parse(display).toString());
+  //   } catch (error) {
+  //     setDisplay("Math Error");
+  //   }
+  // };
   const handleEqualToButton = () => {
     try {
-      setDisplay(parse(display).toString());
+      setDisplay(eval(display).toString());
     } catch (error) {
       setDisplay("Math Error");
     }

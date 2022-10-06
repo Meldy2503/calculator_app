@@ -3,22 +3,22 @@ import styled from "styled-components";
 export const InputContainer = styled.div`
   background-color: ${({ bgColor }) => bgColor || "rgba(0, 0, 0, 0.95)"};
   color: ${({ co }) => co || "#dfd9d9"};
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 22%;
-  box-shadow: 1px 15px 1px #292828;
+  width: 23%;
+  box-shadow: 0.1rem 1.5rem 0.1rem #292828;
   border-radius: 50%;
-  border-bottom: 3px solid #333;
-  border-left: 3px solid #999;
-  border-top: 3px solid #333;
-  border-right: 3px solid #999;
+  border-bottom: 0.3rem solid #333;
+  border-left: 0.3rem solid #999;
+  border-top: 0.3rem solid #333;
+  border-right: 0.3rem solid #999;
 
   &:hover {
-    transform: translateY(5px);
-    border-top: 3px solid #fff8dc;
-    border-bottom: 3px solid #fff8dc;
+    transform: translateY(0.5rem);
+    border-top: 0.3rem solid #fff8dc;
+    border-bottom: 0.3rem solid #fff8dc;
   }
 
   input {
@@ -27,7 +27,7 @@ export const InputContainer = styled.div`
     color: inherit;
     width: 100%;
     border-radius: 50%;
-    padding: 2rem;
+    padding: 1.1rem;
     background-color: transparent;
     border: none;
     display: flex;
